@@ -1,0 +1,19 @@
+{
+  "name": "Fire Light",
+  "device_id": "firelight1",
+  "wifi": {
+    "ssid": "ssid",
+    "password": "password"
+  },
+  "mqtt": {
+    "host": "mqtt",
+    "base_topic": "devices/",
+    "auth": false
+  },
+  "ota": {
+    "enabled": false
+  },
+  "settings": {
+    "voltage_coefficient": 0.0055
+  }
+}

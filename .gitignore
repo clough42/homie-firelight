@@ -1,0 +1,8 @@
+.pioenvs
+.clang_complete
+.gcc-flags.json
+.piolibdeps
+/data/homie/config.json
+/lib/ESPAsyncTCP
+/lib/async-mqtt-client
+/lib/homie-esp8266
