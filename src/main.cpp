@@ -25,7 +25,7 @@ void reportVoltage()
 {
     int voltageCount = analogRead(VOLTAGE_PIN);
     float voltage = voltageCoefficientSetting.get() * voltageCount;
-    Homie.setNodeProperty(batteryNode, "voltage").send(String(voltage));
+    batteryNode.setProperty("voltage").send(String(voltage));
 }
 
 /**
@@ -58,7 +58,7 @@ void setup()
 {
   Serial.begin(115200);
 
-  Homie_setFirmware("firelight", "1.0.0");
+  Homie_setFirmware("firelight", "1.0.10");
   Homie_setBrand("clough42");
 
   Homie
